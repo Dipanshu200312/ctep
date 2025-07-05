@@ -8580,4 +8580,50 @@ button, input[type=submit] {
   from { opacity: 0; transform: translateY(-20px);}
   to { opacity: 1; transform: translateY(0);}
 }
+.sd{
+  width: 170%;
+}
+.hi{
+max-width: 534px;
+}
+.affiliation-title {
+  color: #f7a600;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.affiliation-subtext {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.affiliation-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #f7a600;
+  margin: 0 auto 30px;
+}
+
+.logo-carousel .logo-item {
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.logo-carousel .logo-item img {
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-carousel .logo-item img:hover {
+  transform: scale(1.1);
+}
 

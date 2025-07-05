@@ -4251,7 +4251,7 @@ input[type="submit"] {
     background-color: rgba(255, 255, 255, 0.82);
     padding: 0 30px 6px;
     position: absolute;
-    left: 0;
+    left: 171px;
     bottom: 85px;
 }
 .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation,
@@ -5227,11 +5227,11 @@ input[type="submit"] {
     }
 }
 .about-content {
-    max-width: 380px;
+max-width: 461px;
 }
 .about-content .about-title {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 32px;
     line-height: 54px;
     color: #07294d;
 }
@@ -5258,7 +5258,9 @@ input[type="submit"] {
 }
 .about-content p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
+  width: 517px;
+    text-align: justify;
     line-height: 30px;
     color: #07294d;
     margin-top: 25px;
@@ -5273,8 +5275,12 @@ input[type="submit"] {
     .about-content p {
         padding-left: 0;
         font-size: 16px;
+                width: fit-content;
         line-height: 28px;
     }
+    .tr{
+ display: none;
+}
 }
 .about-content .main-btn {
     width: 160px;
@@ -5309,6 +5315,9 @@ input[type="submit"] {
     transform: rotate(45deg);
     position: absolute;
     z-index: 1;
+}
+.tr{
+  width: max-content;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .about-image .single-image {
@@ -8464,4 +8473,129 @@ input[type="submit"] {
         font-size: 14px;
         line-height: 26px;
     }
+}
+.st{
+  padding-top: 12% !important;
+}
+.recognition-section {
+  background-color: #f9f9f9;
+  padding: 97px 20px 97px 0px; 
+}
+
+.recognition-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recognition-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.recognition-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.recognition-line {
+  width: 100px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.recognition-slider {
+  margin-top: 40px;
+}
+
+.recognition-logo-box {
+  background: #fff;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 10px;
+  height: 100px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.recognition-logo-box img {
+  max-height: 80px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.recognition-logo-box:hover {
+  transform: scale(1.05);
+}
+.slick-arrow {
+  display: none !important;
+}
+.global-affiliations {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.affiliation-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.affiliation-subtext {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.affiliation-underline {
+  width: 60px;
+  height: 4px;
+  background-color: #007BFF;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+.logo-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.logo-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.logo-item {
+  min-width: 120px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-carousel {
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .logo-item {
+    min-width: 180px;
+  }
 }
