@@ -4249,54 +4249,70 @@ input[type="submit"] {
     display: inline-block;
 }
 .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta {
-    background-color: rgba(255, 255, 255, 0.82);
-    padding: 0 30px 6px;
-    position: absolute;
-    left: 171px;
-    bottom: 85px;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    padding: 8px 20px !important;
+    width: fit-content !important;
+    max-width: 260px !important;
+    margin: 10px auto 0 auto !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    text-align: center !important;
 }
-.testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation,
-.testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 32px;
-    color: #07294d;
-    position: relative;
-    display: inline-block;
-    margin-right: 13px;
-    margin-top: 6px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation,
-    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name {
-        font-size: 14px;
-    }
-}
-@media (max-width: 767px) {
-    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation,
-    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name {
-        font-size: 13px;
-        line-height: 22px;
-    }
-}
+
+.testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name,
 .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation {
-    padding-left: 15px;
-    margin-right: 0;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    color: #07294d !important;
+    position: relative !important;
+    margin-top: 4px !important;
+    display: block !important;
 }
+
+.testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation {
+    font-size: 13.5px !important;
+    color: #444 !important;
+    padding-left: 12px !important;
+    margin-top: 2px !important;
+    position: relative !important;
+}
+
 .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 70%;
-    left: 0;
-    background-color: #707070;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+    content: "" !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 70% !important;
+    left: 0 !important;
+    background-color: #ccc !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta {
+        max-width: 220px !important;
+    }
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name,
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation {
+        font-size: 14px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta {
+        padding: 6px 15px !important;
+        max-width: 100% !important;
+    }
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .name,
+    .testimonial-wrapper-2 .testimonials-image .single-testimonial-image .content-meta .designation {
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+}
+
 .testimonial-wrapper-2 .testimonials-image .slick-arrow {
     bottom: auto;
     top: 70%;
@@ -8637,8 +8653,4 @@ max-width: 461px;
   top: 2px !important;
   color: #007BFF !important;
   font-weight: bold !important;
-}
-.tr
-.de{
-  
 }
